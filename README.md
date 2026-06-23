@@ -1,5 +1,5 @@
 
-    This website is built to demonstrate the requirements for IAT355 Assignment 2.  
+    This website is built to demonstrate the requirements for IAT339 P-03.  
     It follows a modular structure consisting of the following files:
     
     1. index.html  
@@ -22,6 +22,4 @@
        - Provides logic for interactive elements, allowing users to dynamically 
          influence the visuals.
 
-    5. main.js  
-       - Supports additional site-wide interactivity and navigation logic.  
 
