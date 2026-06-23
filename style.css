@@ -238,13 +238,13 @@ section {
 
 .project-detail-grid {
     display: grid;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .project-detail-row {
     display: grid;
-    grid-template-columns: minmax(180px, 260px) 1fr;
-    gap: 1rem;
+    grid-template-columns: minmax(200px, 280px) 1fr;
+    gap: 2.5rem;
     align-items: start;
 }
 
@@ -257,12 +257,29 @@ section {
 
 .project-detail-text h4 {
     margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #521C0D;
+    font-weight: 600;
+}
+
+.project-detail-text p {
+    margin: 0.5rem 0 0 0;
+    font-size: 0.95rem;
+    color: #2f2f2f;
+    line-height: 1.5;
 }
 
 .project-copy h3 {
     margin-top: 0;
     font-size: 1.5rem;
     color: #FF9013;
+}
+
+.project-copy h4 {
+    margin: 1.25rem 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #521C0D;
+    font-weight: 600;
 }
 
 .project-copy p {
@@ -421,16 +438,18 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .project-card--split {
+        grid-template-columns: 1fr;
+    }
+
     .project-detail-row {
         grid-template-columns: 1fr;
-        align-items: stretch;
         gap: 1rem;
     }
 
     .project-detail-row img {
         width: 100%;
         height: auto;
-        margin-bottom: 0.75rem;
     }
 
     .project-detail-text {
