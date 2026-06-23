@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Porfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="visualizations.html" class="active">Visualization</a>
+        </nav>
+    </header>
+
+    <main class="visualizations">
+        <section class="visual-section">
+            <p class="visualTitle01">How Would You Like To Eat For Dinner?</p>
+            <p class="subtitle">Do you know the calorie content of this food?</p>
+            <div id="plate" class="visual-panel">
+                <svg viewBox="0 0 760 760" class="responsive-svg" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <radialGradient id="plateGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#fffdfa" />
+                            <stop offset="70%" stop-color="#fff8f0" />
+                            <stop offset="100%" stop-color="#f9f4ec" />
+                        </radialGradient>
+                        <radialGradient id="rimGradient" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="rgba(255,255,255,0)" />
+                            <stop offset="80%" stop-color="rgba(0,0,0,0.03)" />
+                            <stop offset="100%" stop-color="rgba(0,0,0,0.06)" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="380" cy="380" r="360" fill="url(#plateGradient)" />
+                    <circle cx="380" cy="380" r="355" fill="none" stroke="#f0ebe4" stroke-width="6" opacity="0.85" />
+                    <circle cx="380" cy="380" r="320" fill="url(#rimGradient)" opacity="0.28" />
+                    <circle id="pan" cx="380" cy="380" r="200" fill="none" />
+                    <text id="centerText" x="380" y="380" text-anchor="middle" dominant-baseline="middle" font-size="40" fill="black">Bon appétit</text>
+                </svg>
+            </div>
+            <div class="Food">
+                <p id="Sandwich">Sandwich</p>
+                <p id="Steak">Steak</p>
+                <p id="Sushi">Sushi</p>
+                <p id="Tacos">Tacos</p>
+                <p id="CurryChicken">Curry Chicken</p>
+            </div>
+        </section>
+
+        <section class="visual-section">
+            <p class="visualTitle02">When there's nothing to occupy you, gaze upon the distant trees.</p>
+            <div class="visual-panel">
+                <svg viewBox="-500 -100 1000 900" class="responsive-svg" preserveAspectRatio="xMidYMid meet">
+                    <defs>
+                        <g id="tree">
+                            <polygon points="-10,0 10,0 0 -50" fill="#38755b" />
+                            <line x1="0" y1="0" x2="0" y2="10" stroke="#778074" stroke-width="2" />
+                        </g>
+                    </defs>
+                    <rect x="-500" y="-100" width="1000" height="500" fill="#F1DBC3" />
+                    <circle cx="0" cy="380" r="350" fill="#F8F4E8" />
+                    <use href="#tree" x="-30" y="25" transform="scale(2)" />
+                    <use href="#tree" x="-20" y="40" transform="scale(1.2)" />
+                    <use href="#tree" x="40" y="40" />
+                    <use href="#tree" x="50" y="30" transform="scale(1.5)" />
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <script src="vis.js"></script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
