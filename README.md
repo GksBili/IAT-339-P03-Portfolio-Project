@@ -21,5 +21,9 @@
        - Handles SVG interactions such as color and text changes.  
        - Provides logic for interactive elements, allowing users to dynamically 
          influence the visuals.
+    5.Website Link
+     - (https://gksbili.github.io/IAT-339-P03-Portfolio-Project/).  
+    6 Github Link
+     - (https://github.com/GksBili/IAT-339-P03-Portfolio-Project).  
 
 
